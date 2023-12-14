@@ -149,8 +149,23 @@ ul {
 .diagonal-box a {
     rotate: -45deg;
     position: absolute;
-    top: 20%;
-    left: 29%;
+    /* animation: down-fade 4s infinite ease-in-out; */
+}
+
+@keyframes down-fade {
+    25% {
+        top: 21%;
+        opacity: 1;
+    }
+    50% {
+        
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .about-me {
