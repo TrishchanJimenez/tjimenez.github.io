@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+    --light-blue: #CCE0FF;
+    --blue: #2400FF;
+    --fs-64: 64px;
+    --fs-48: 48px;
+    --fs-40: 40px;
+    --fs-36: 36px;
+    --fs-32: 32px;
+    --fs-24: 24px;
+    --fs-20: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient(to right, #CCE0FF80 50%, white 0%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 0;
+}
+
+.navbar .title {
+    font-family: 'Pacifico', cursive;
+    font-size: var(--fs-48);
+    margin-left: 5%;
+}
+
+.navbar .title a {
+    color: black;
+}
+
+.nav {
+    width: 40%;
+}
+
+.nav a {
+    color: black;
+    font-size: var(--fs-24);
+    font-weight: bold;
+    padding: 0 2%;
+    margin: 0 2%;    
+}
+
+.nav a:hover {
+    border-bottom: #2400FF solid 4px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.featured-text {
+    text-align: center;
+    margin: 11% 0 6%;
+    margin-left: 30px;
+}
+
+.featured-text .text-1,
+.featured-text .text-2 {
+    display: block;
+}
+
+.text-1 {
+    font-size: var(--fs-32);
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--blue);
+}
+
+.text-2 {
+    font-size: var(--fs-64);
+    font-weight: black;
+}
+
+.featured-text .text {
+    position: relative;
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 600;
+}
+.text.first-text {
+    color: black;
+    font-size: var(--fs-40);
+    font-weight: black;
+}
+.text.sec-text {
+    text-decoration: underline;
+    font-size: var(--fs-40);
+    font-weight: black;
+}
+
+.text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 4px solid var(--blue);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%,
+    60% {
+        left: calc(100% + 4px);
+    }
+    
+    100% {
+        left: 0%;
+    }
+}
+
+.diagonal-box {
+    height: 50px;
+    width: 50px;
+    background-color: var(--light-blue);
+    margin: 0 auto;
+    rotate: 45deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.diagonal-box a {
+    rotate: -45deg;
+    position: absolute;
+    top: 20%;
+    left: 29%;
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-me img, .about-me_text {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.about-me img {
+    max-height: 100vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.about-me_text {
+    margin-top: 10%;
+}
+
+.about-me_text h2 {
+    color: var(--blue);
+    font-size: var(--fs-48);
+    font-weight: black;
+}
+
+.about-me_text p {
+    font-size: var(--fs-24);
+}
+
+.goals {
+    background-color: #657DD1;
+}
+
+
+.footer {
+    display: flex;
+    background-color: #151426;
+    color: white;
+    padding: 2% 5%;
+}
+
+.footer h3 {
+    font-size: var(--fs-32);
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.footer-about p {
+    font-size: var(--fs-24);
+}
+
+.footer-links {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts {
+    margin-left: 10%;
+}
+
+.footer-links a {
+    color: white;
+    font-size: var(--fs-24);
+    padding: 5% 0;
+}
+
+.footer-img_container {
+    display: flex;
+}
+
+.footer-img_container a {
+    margin: 0 2.5%;
+}
+
+/* Contact Page CSS */
+
+.navbar.contact-page {
+    background-color: black;    
+}
+
+.navbar.contact-page h1 a, .navbar.contact-page nav a{
+    color: white;
+}
+
+.contact-text {
+    text-align: center;
+    width: 50%;
+    margin: 5% auto 0;
+}
+
+.contact-text h2 {
+    font-size: var(--fs-48);
+}
+
+.contact-text p {
+    margin-top: 2%;
+    font-size: var(--fs-24);
+    font-weight: lighter;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    padding-bottom: 5%;
+}
+
+.contact-cards {
+    width: 20%;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 0 1%;
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 5%;
+}
+
+.contact-cards img {
+    height: 50%;
+    width: 50%;
+    margin-bottom: 4%;
+}
+
+.contact-cards h3 {
+    font-size: var(--fs-24);
+    font-weight: lighter;
+    margin-bottom: 15%;
+}
+
+.contact-cards a {
+    font-size: var(--fs-20);
+    color: var(--blue)
+}
