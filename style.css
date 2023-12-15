@@ -54,7 +54,7 @@ ul {
 }
 
 .nav {
-    width: 40%;
+    width: 30%;
 }
 
 .nav a {
@@ -62,7 +62,7 @@ ul {
     font-size: var(--fs-24);
     font-weight: bold;
     padding: 0 2%;
-    margin: 0 2%;    
+    margin: 0 2%;  
 }
 
 .nav a:hover {
@@ -173,7 +173,7 @@ ul {
 }
 
 .about-me img, .about-me_text {
-    width: 40%;
+    width: 38%;
     margin: 0 auto;
 }
 
@@ -184,7 +184,7 @@ ul {
 }
 
 .about-me_text {
-    margin-top: 10%;
+    margin-top: 6%;
 }
 
 .about-me_text h2 {
@@ -197,8 +197,8 @@ ul {
     font-size: var(--fs-24);
 }
 
-.goals {
-    background-color: #657DD1;
+.gallery {
+
 }
 
 
